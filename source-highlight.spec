@@ -1,6 +1,6 @@
 Name:		source-highlight
 Version:	3.1.8
-Release:	21
+Release:	22
 Summary:	Source Code Highlighter with Support for Many Languages
 License:	GPLv3+
 URL:		http://www.gnu.org/software/src-highlite
@@ -59,6 +59,8 @@ popd
 
 %files
 %defattr(-,root,root)
+%doc AUTHORS NEWS
+%license COPYING
 %{_bindir}/check-regexp
 %{_bindir}/*html
 %{_bindir}/source-highlight*
@@ -81,5 +83,11 @@ popd
 %exclude %{_datadir}/info/dir
 
 %changelog
+* Thu Oct 10 2019 openEuler Buildteam <buildteam@openeuler.org> - 3.1.8-22
+- Type:bugfix
+- Id:NA
+- SUG:NA
+- DESC:add license files to rpm package
+
 * Thu Aug 29 2019 openEuler Buildteam <buildteam@openeuler.org> - 3.1.8-21
 - Package init
