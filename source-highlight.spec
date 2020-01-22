@@ -1,13 +1,13 @@
 Name:		source-highlight
 Version:	3.1.8
-Release:	22
+Release:	23
 Summary:	Source Code Highlighter with Support for Many Languages
 License:	GPLv3+
 URL:		http://www.gnu.org/software/src-highlite
 Source0:        ftp://ftp.gnu.org/gnu/src-highlite/source-highlight-%{version}.tar.gz
 Source1:        ftp://ftp.gnu.org/gnu/src-highlite/source-highlight-%{version}.tar.gz.sig
 
-BuildRequires:	bison boost-devel chrpath ctags flex gcc gcc-c++ help2man bash-completion
+BuildRequires:	bison boost-devel chrpath ctags flex gcc gcc-c++ help2man bash-completion git
 Requires:       ctags	
 
 %description
@@ -83,6 +83,12 @@ popd
 %exclude %{_datadir}/info/dir
 
 %changelog
+* Wed Jan 22 2020 openEuler Buildteam <buildteam@openeuler.org> - 3.1.8-23
+- Type:bugfix
+- Id:NA
+- SUG:NA
+- DESC:add git in buildrequires
+
 * Thu Oct 10 2019 openEuler Buildteam <buildteam@openeuler.org> - 3.1.8-22
 - Type:bugfix
 - Id:NA
