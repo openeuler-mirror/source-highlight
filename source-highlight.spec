@@ -1,6 +1,6 @@
 Name:		source-highlight
 Version:	3.1.8
-Release:	23
+Release:	24
 Summary:	Source Code Highlighter with Support for Many Languages
 License:	GPLv3+
 URL:		http://www.gnu.org/software/src-highlite
@@ -83,6 +83,9 @@ popd
 %exclude %{_datadir}/info/dir
 
 %changelog
+* Sat Aug 29 2020 jinzhimin <jinzhimin2@huawei.com> - 3.1.8-24
+- rebuild for requirement package update
+
 * Wed Jan 22 2020 openEuler Buildteam <buildteam@openeuler.org> - 3.1.8-23
 - Type:bugfix
 - Id:NA
