@@ -1,6 +1,6 @@
 Name:		source-highlight
-Version:	3.1.8
-Release:	24
+Version:	3.1.9
+Release:	1
 Summary:	Source Code Highlighter with Support for Many Languages
 License:	GPLv3+
 URL:		http://www.gnu.org/software/src-highlite
@@ -83,6 +83,9 @@ popd
 %exclude %{_datadir}/info/dir
 
 %changelog
+* Thu Jan 28 2021 jinzhimin <jinzhimin2@huawei.com> - 3.1.9-1
+- upgrate to 3.1.9
+
 * Wed Dec 16 2020 zhanzhimin <zhanzhimin@huawei.com> - 3.1.8-24
 - Update Source0
 
