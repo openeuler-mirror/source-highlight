@@ -1,13 +1,13 @@
 Name:		source-highlight
 Version:	3.1.9
-Release:	1
+Release:	2
 Summary:	Source Code Highlighter with Support for Many Languages
 License:	GPLv3+
 URL:		http://www.gnu.org/software/src-highlite
 Source0:        https://ftp.gnu.org/gnu/src-highlite/source-highlight-%{version}.tar.gz
 Source1:        https://ftp.gnu.org/gnu/src-highlite/source-highlight-%{version}.tar.gz.sig
 
-BuildRequires:	bison boost-devel chrpath ctags flex gcc gcc-c++ help2man bash-completion git
+BuildRequires:	bison boost-devel chrpath ctags flex gcc gcc-c++ help2man bash-completion
 Requires:       ctags	
 
 %description
@@ -32,7 +32,7 @@ Header files for source-highlight
 %package_help
 
 %prep
-%autosetup -n %{name}-%{version} -p1 -S git
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %configure --with-boost-regex=boost_regex
@@ -83,6 +83,9 @@ popd
 %exclude %{_datadir}/info/dir
 
 %changelog
+* Mon Aug 02 2021 chenyanpanHW <chenyanpan@huawei.com> - 3.1.9-2
+- DESC: delete -S git from %autosetup, and delete BuildRequires git
+
 * Thu Jan 28 2021 jinzhimin <jinzhimin2@huawei.com> - 3.1.9-1
 - upgrate to 3.1.9
 
