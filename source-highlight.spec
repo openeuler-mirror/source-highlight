@@ -1,6 +1,6 @@
 Name:		source-highlight
 Version:	3.1.9
-Release:	2
+Release:	3
 Summary:	Source Code Highlighter with Support for Many Languages
 License:	GPLv3+
 URL:		http://www.gnu.org/software/src-highlite
@@ -35,6 +35,7 @@ Header files for source-highlight
 %autosetup -n %{name}-%{version} -p1
 
 %build
+export CXXFLAGS="-std=c++11"
 %configure --with-boost-regex=boost_regex
 %make_build
 
@@ -83,6 +84,9 @@ popd
 %exclude %{_datadir}/info/dir
 
 %changelog
+* Mon May 15 2023 ouuleilei <wangliu@iscas.ac.cn> - 3.1.9-3
+- Add CXXFLAGS to fix build error
+
 * Mon Aug 02 2021 chenyanpanHW <chenyanpan@huawei.com> - 3.1.9-2
 - DESC: delete -S git from %autosetup, and delete BuildRequires git
 
